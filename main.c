@@ -23,15 +23,15 @@ int main(int argc, char** argv)
     glutCreateWindow("Somniac");
     glutDisplayFunc(display);
     glutMainLoop();
-}
+} 
 
 void display()
 {
-    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT); // to clear the buffer from any colors to clarify
     glBegin(GL_POINTS);
         glVertex2f(0, 0);
     glEnd();
 
     glutSwapBuffers();
-
+// another comment
 }
